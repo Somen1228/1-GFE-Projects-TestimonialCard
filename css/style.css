@@ -7,11 +7,7 @@ body {
     sans-serif;
     background-color: #EFF1F3;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1280px;
-  height: 100vh;
+    justify-content: center;
 }
 
 * {
@@ -19,8 +15,8 @@ body {
 }
 
 .container {
+  margin-top: 200px;
   background: white;
-  height: 233px;
   width: 340px;
   padding: 24px;
   display: grid;
@@ -29,7 +25,7 @@ body {
   "info info";
   gap: 16px;
   border-radius: 10px;
-  /* box-shadow: 1px -1px 5px 0.5px lightgrey; */
+  box-shadow: 1px -1px 5px 0.5px lightgrey;
 }
 
 .profile-photo {
@@ -48,18 +44,23 @@ body {
 
 #fullname {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 #user-id {
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .info {
   width: 292px;
   height: 120px;
-  grid-row: span 2;
   grid-area: info;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+#user-id, .info {
+  color: rgb(186, 186, 186)
 }
 
 
