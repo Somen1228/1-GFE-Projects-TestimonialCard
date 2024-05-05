@@ -1,0 +1,70 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+    background-color: #EFF1F3;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: white;
+  height: 233px;
+  width: 340px;
+  padding: 24px;
+  display: grid;
+  grid-template-areas: 
+  "photo name"
+  "info info";
+  gap: 16px;
+  border-radius: 10px;
+  /* box-shadow: 1px -1px 5px 0.5px lightgrey; */
+}
+
+.profile-photo {
+  width: 48px;
+  height: 48px;
+  grid-area: photo;
+}
+
+.name {
+  height: 48px;
+  width: 259px;
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+}
+
+#fullname {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#user-id {
+  font-size: 14px;
+}
+
+.info {
+  width: 292px;
+  height: 120px;
+  grid-row: span 2;
+  grid-area: info;
+}
+
+
+
+
+
+
+
